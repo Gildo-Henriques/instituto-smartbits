@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bg-linear-gradient{
+    animation: background 2s ease infinite reverse;
+    background: linear-gradient(90deg, #eaeaea, #f9f9f9, #eaeaea);
+    background-size: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+@keyframes background {
+    0%{
+        background-position: -100% 0%;
+    }
+    
+    100%{
+        background-position: 100% 0%;
+    }
+}
+.flex-1{
+    display: flex !important;
+}
+.none{
+    display: none !important;
+}
